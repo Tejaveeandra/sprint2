@@ -1,0 +1,50 @@
+.student_personal_info_top_name{
+    display: flex;
+    gap: 10px;
+}
+.student_personal_info_top{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.studentCurrentLable{
+    display: flex;
+  white-space: nowrap;
+  font-size: 12px;
+  font-weight: 500;
+  color: #3425FF;
+  border: 1PX solid #3425FF;
+  background-color: #C7C3FF; /* Primary color */
+  padding: 2px 6px;
+  border-radius: 4px;
+  align-items: center;
+  gap:5px
+}
+.student_personal_info_admHeading{
+    color: #6E7C87;
+font-family: Inter;
+font-size: 12px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+letter-spacing: -0.264px;
+}
+.student_personal_info_admNo{
+color: #323232;
+font-family: Inter;
+font-size: 14px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+letter-spacing: -0.308px;
+}
+.student_personal_info_top_details{
+    display: flex;
+    gap: 5px;
+    margin-top: 10px;
+}
+.student_personal_info_bottom_section{
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}

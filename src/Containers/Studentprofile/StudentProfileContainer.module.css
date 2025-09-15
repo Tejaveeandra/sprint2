@@ -1,0 +1,21 @@
+.student_profile_container{
+     background-image: url('../../assets/Group\ 21.png');
+        background-size: "100% 100%";
+        background-position: "center";
+        background-repeat: "no-repeat";
+        /* height: 100vh; */
+        /* width:calc(100% - 17%); */
+        width: 100%;
+        padding: 20px;
+        border: 1px solid #DDD;
+        border-radius: 8px;    
+        display: flex;
+        flex-direction: row; 
+
+}
+.student_profile_image_section{
+    display: flex;
+    /* align-items: center; */
+    gap: 10px;
+    /* margin-bottom: 20px; */
+}

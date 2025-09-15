@@ -1,0 +1,41 @@
+.application_search_main_container{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.application_search_container {
+  background-image: url("../../assets/application_search_background.png");
+  background-size: cover;
+  background-position: left;
+  background-repeat: no-repeat;
+  max-width:100%;
+  padding: 22px 15px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  display:flex;
+  flex-direction: column;
+  gap:10px;
+  
+}
+.application_search_content_header_text{
+color: #010101;
+/* font-family: "Segoe UI"; */
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+font-size: 18px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+letter-spacing: -0.108px;
+}
+.application_search_content{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.application_search_content_cards{
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  flex-wrap: wrap;
+}

@@ -1,0 +1,41 @@
+.student_info_buttons_container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 8px;
+  padding: 10px 16px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.primaryBtn {
+  background-color: #2f2fff; /* blue */
+  color: white;
+  border: none;
+}
+
+.primaryBtn:hover {
+  background-color: #1f1fdd;
+}
+
+.secondaryBtn {
+  background-color: white;
+  color: #2f2fff;
+  border: 2px solid #2f2fff;
+}
+
+.secondaryBtn:hover {
+  background-color: #f0f0ff;
+}
+
+.icon {
+  font-size: 16px;
+}
