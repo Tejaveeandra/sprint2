@@ -20,7 +20,7 @@
   height: 17px;
 }
 
-input[type="text"]{
+.sc_top_header_input{
   flex:1;
   border:none;
   font-size: 16px;

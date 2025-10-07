@@ -1,0 +1,49 @@
+.dropdownOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 600; /* Below dropdown content, above backdrop */
+  background: transparent;
+}
+
+.dropdownContent {
+  position: absolute;
+  top: calc(100% + -15px);
+  left: 1%;
+  right: 0;
+  width: 100%;
+  max-width: 30%;
+  z-index: 1000; /* Higher than backdrop to remain unblurred */
+}
+
+/* Responsive breakpoints with specific widths - no overlapping */
+@media (min-width: 1031px) and (max-width: 1440px) {
+  .dropdownContent {
+    max-width: 30%;
+  }
+}
+
+/* Specific adjustment for 1025px - 1030px range */
+@media (min-width: 1025px) and (max-width: 1030px) {
+  .dropdownContent {
+    max-width: 40%;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .dropdownContent {
+    max-width: 40%;
+  }
+}
+
+@media (max-width: 768px) {
+  .dropdownContent {
+    top: calc(100% + -15px);
+    left: 1%;
+    right: 0;
+    width: 100%;
+    max-width: 45%;
+  }
+}

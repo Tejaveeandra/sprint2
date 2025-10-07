@@ -1,0 +1,93 @@
+/* Student Category Section */
+.studentCategorySection {
+  /* Always visible - no animations needed */
+}
+
+/* Checkbox Grid */
+.checkboxGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+ 
+  padding: 5px 0;
+}
+
+/* Checkbox Labels */
+.checkboxLabel {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 400;
+  color: #333;
+  padding: 8px 12px;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+}
+
+
+
+/* Checkbox Input */
+.checkbox {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Custom Checkmark */
+.checkmark {
+  position: relative;
+  height: 16px;
+  width: 16px;
+  background-color: #fff;
+  border: 1px solid #16233A;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+  flex-shrink: 0;
+}
+
+
+.checkbox:checked + .checkmark {
+  background-color: #3425FF;
+  border-color: #3425FF;
+}
+
+.checkbox:checked + .checkmark:after {
+  content: "";
+  position: absolute;
+  left: 5px;
+  top: 2px;
+  width: 4px;
+  height: 8px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .checkboxGrid {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+  
+  .checkboxLabel {
+    font-size: 13px;
+    padding: 6px 10px;
+  }
+  
+  .checkmark {
+    height: 16px;
+    width: 16px;
+  }
+  
+  .checkbox:checked + .checkmark:after {
+    left: 4px;
+    top: 1px;
+    width: 3px;
+    height: 6px;
+  }
+}
